@@ -1,0 +1,69 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body{
+  font-family: Arial, Tahoma;
+}
+
+.box{
+  background-color: #eee;
+  margin: 40px auto;
+  width: 800px;
+  height: 300px;
+  position: relative;
+}
+.box::before{
+  width: 4px;
+  height: 100%;
+  left: 50%;
+  margin-left: -2px;
+}
+.box::after{
+  height: 4px;
+  width: 100%;
+  top: 50%;
+  margin-top: -2px;
+}
+.box::after,
+.box::before{
+  content: " ";
+  background-color: #ddd;
+  position: absolute;
+}
+.box .item{
+  background-color: red;
+  width: 200px;
+  height: 100px;
+  z-index: 1;
+}
+/* demo */
+/* position */
+/* 
+ .box .item{
+  position: absolute;
+  left: calc(50% - 100px);
+  top: calc(50% - 50px);
+  z-index: 1;
+} 
+*/
+/* position + transform */
+/* 
+  .box .item{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50% , -50%);
+  z-index: 1;
+}  
+*/
+
+/* flex */
+/*
+ .box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+*/

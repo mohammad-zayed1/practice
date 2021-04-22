@@ -6,31 +6,6 @@
 body{
   font-family: Arial, Tahoma;
 }
-.filll{
-  margin: 50px auto;
-  text-align: center;
-  font-weight: bold;
-  font-size: 100px;
-  width: fit-content;
-  -webkit-text-fill-color: white;
-  -webkit-text-stroke: 1px #333;
-  position: relative;
-  
-  
-}
-.filll::before{
-  content: attr(data-text);
-  position: absolute;
-  left: 0;
-  top: 0;
-  -webkit-text-fill-color: #0e82cf;
-  transition:0.9s;
-  width: 0;
-  overflow: hidden;
-}
-.filll:hover::before{
-  width: 100%;
-}
 .fill{
   margin: 50px auto;
   text-align: center;
@@ -48,36 +23,11 @@ body{
   position: absolute;
   left: 0;
   top: 0;
-  -webkit-text-fill-color: #333;
+  -webkit-text-fill-color: #ff5722;
   transition:0.9s;
   width: 0;
   overflow: hidden;
 }
 .fill:hover::before{
-  width: 100%;
-}
-.fil{
-  margin: 50px auto;
-  text-align: center;
-  font-weight: bold;
-  font-size: 100px;
-  width: fit-content;
-  -webkit-text-fill-color: white;
-  -webkit-text-stroke: 1px #333;
-  position: relative;
-  
-  
-}
-.fil::before{
-  content: attr(data-text);
-  position: absolute;
-  left: 0;
-  top: 0;
-  -webkit-text-fill-color: #eb194e;
-  transition:0.9s;
-  width: 0;
-  overflow: hidden;
-}
-.fil:hover::before{
   width: 100%;
 }
